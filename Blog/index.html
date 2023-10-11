@@ -2,77 +2,124 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML&CSS</title>
+    <title>Movies</title>
   </head>
   <body>
     <header>
-       <nav>
-        <ul>
-          <li><a id="up" href="pages/contacts.html">Contacts<a></li>
-            <li><a href="pages/about.html">About Us</a></li>
-            <li><a href="#olist">Olist</a></li>
-            <li><a href="#list">List</a></li>
+        <a href="./index.html" id="logo"><img width="120" height="120" src="logo.png" alt="logo" />
+          Movies-TV.com</a>
+        <nav>
+          <ul class="main_menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="">Payment</a></li>
+            <li><a href="">Login</a></li>
           </ul>
-      </nav>
-
-      <form action="">
-        <input type="search" />
-      </form>
+        </nav>
+          <a href="tel:380676554303">Booking</a>
+          <a href="mailto:movies@gmail.com">Support</a>
+          <form action="" method="POST">
+            <input type="search" placeholder="search" class="header_search" />
+          </form>
     </header>
-
-      <section>
-        <ol id="olist">
-          <li>Cписок</li>
-          <li>Cписок</li>
-          <li>Cписок</li>
-          <li>Cписок</li>
-          <li>Cписок</li>
-          <li>Cписок</li>
-        </ol>
-      </section>
-    
-     <section>
-      <ul>
-        <li>List</li>
-        <li>List</li>
-        <li>List</li>
-        <li>List</li>
-      </ul>
-     </section>
-     
-
+   
+    <aside class="comp"
+    <hgroup><h2>
+      Compilation
+    </h2></hgroup>
+     <ul>
+       <li><a href="">Sci-Fi</a></li>
+       <li><a href="">Horror</a></li>
+       <li><a href="">Supernatural</a></li>
+       <li><a href="">Future</a></li>
+       <li><a href="">Сourt thrillers</a></li>
+       <li><a href="">Romantic</a></li>
+     </ul>
+     <form action="" method="get">
+       <select name="year" id="year">
+         <option value="">2019</option>
+         <option value="">2020</option>
+         <option value="">2021</option>
+         <option value="">2022</option>
+         <option value="">2023</option>
+       </select>
+     </form>
+   </aside>
 
     <main>
-      <section>
-        <h1>Главная страница</h1>
-        <h2>Главная страница</h2>
-        <h3>Главная страница</h3>
-        <h4>Главная страница</h4>
-        <h5>Главная страница</h5>
-        <h6>Главная страница</h6>
-      </section>
-  
-      <section class="main_form">
-        <form action="./index.html">
-          <input type="text" placeholder="name" />
-          <input type="text" placeholder="surname" />
-          <input type="text" /><input type="text" /><input type="text" /><input
-            type="text"
-          />
-          <input type="password" />
-          <input type="button" value="submit" />
+     
+   <section class="movies_gallery">
+          <a href="">
+        <figure>
+         <img src="images/avatar.webp" alt="">
+         <figcaption>
+           Avatar
+         </figcaption>
+        </figure>
+      </a> 
+      <a href="">
+        <figure>
+          <img src="images/plane.webp" alt="">
+          <figcaption>
+            Plane
+          </figcaption>
+         </figure>
+         </a>
+         <a href="">
+         <figure>
+          <img src="images/babylon.webp" alt="">
+          <figcaption>
+            Babylon
+          </figcaption>
+         </figure>
+        </a>
+       </section>
+
+       <article class="container new">
+        <span>10.02.2023</span>
+          <ul>
+          <li><a href="">YellowStone - 1,2,3,4</a></li>
+          <li><a href="">Quantum Leap - 11,12,13 series</a></li>
+          <li><a href="">Fantasy Island - 2,3,4 series</a></li>
+          <li><a href="">The Neighborhood-</a></li>
+          <li><a href="">Avatar:The Way of Water </a></li>
+          <li><a href="">Son</a></li>
+        </ul>
+        <span>14.02.2023</span>
+        <ul>
+        <li><a href="">Plane</a></li>
+        <li><a href="">Blood</a></li>
+        <li><a href="">Knock at the Cabin</a></li>
+        <li><a href="">Beast </a></li>
+      </ul>
+      </article>
+
+      <section class="subscription">
+        <hgroup><h2>
+          VIP Subscription
+        </h2></hgroup>
+        <form action="" method="POST">
+          <input type="text" name="name" placeholder="name" maxlength="20" required />
+          <input type="tel" name="phone" placeholder="phone" maxlength="20" required />
+          <input type="email" name="email" placeholder="email"  required />
+          <select name="" id="">
+            <option value="">Premium</option>
+            <option value="">4k</option>
+            <option value="">HD1080</option>
+          </select>
+          <input type="submit" value="Send">
         </form>
       </section>
     </main>
 
-    <article>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium expedita quisquam, repellat maxime officia facilis nulla illo. Amet quam, sed nobis autem expedita sunt nulla aspernatur, voluptatibus quia dolore dolor doloremque magnam tempora rem. Tenetur deserunt vel quis similique dolorem recusandae aspernatur nisi at reprehenderit hic incidunt deleniti voluptatum placeat totam delectus ad, earum sunt nobis quaerat est fugiat possimus, nam voluptate. Fugit incidunt laborum nisi, quia dicta repellat dolore impedit corporis eius nihil provident. Delectus earum assumenda odit. Dolor magnam ex pariatur officia! Error rem tenetur officiis perspiciatis laboriosam, doloremque id maiores similique obcaecati debitis sed harum excepturi dolore.</p>
-    </article>
 
     <footer>
-      <img src="./download.jpeg" alt="pet" />
-      <a href="#up">UP</a>
-    </footer>
+        <a href="#">About us</a>
+        <a href="mailto:movies@gmail.com">Support</a>
+        <span>&#169;Movies-TV.com</span>
+  </footer>
   </body>
 </html>
