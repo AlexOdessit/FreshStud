@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background: #000;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+section {
+  margin-bottom: 50px;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: yellow;
+  font-size: 20px;
+}
+
+.movies_gallery .slider {
+  display: flex;
+  justify-content: center;
+}
+
+.movies_gallery .slider a {
+  color: #000;
+  text-decoration: none;
+}
+
+.movies_gallery img {
+  width: 250px;
+  height: 150px;
+  margin-left: 10px;
+}
+
+figcaption {
+  background: #fff;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #fff;
+  font-size: 18px;
+}
+
+header.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 20px;
+  background: url("../images/top-background.png");
+  background-position: center center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu a {
+  padding-left: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+
+header ul {
+  text-align: left;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header a {
+  color: #fff;
+}
+
+header .contacts {
+  display: flex;
+}
+.header_search {
+  margin-left: 20px;
+}
+
+.new {
+  max-width: 800px;
+}
+
+article {
+  background: #fff;
+  padding: 10px;
+}
+
+article ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+article a {
+  color: red;
+  text-decoration: none;
+}
+
+.comp {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.comp a {
+  color: yellow;
+}
+
+.subscription .container {
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid #fff;
+  padding: 20px;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+
+footer .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .contacts a {
+  margin-left: 15px;
+}

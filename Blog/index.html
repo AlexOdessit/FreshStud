@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movies</title>
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <header>
+    <header class="menu">
       <a href="./index.html" id="logo"
         ><img width="120" height="120" src="images/logo.png" alt="logo" />
         Movies-TV.com</a
@@ -19,8 +20,10 @@
           <li><a href="pages/login.html">Login</a></li>
         </ul>
       </nav>
-      <a href="tel:380676554303">Booking</a>
-      <a href="mailto:movies@gmail.com">Support</a>
+      <div class="contacts">
+        <a href="tel:380676554303">Booking</a>
+        <a href="mailto:movies@gmail.com">Support</a>
+      </div>
       <form action="" method="POST">
         <input type="search" placeholder="search" class="header_search" />
       </form>
@@ -50,24 +53,26 @@
 
     <main>
       <section class="movies_gallery">
-        <a href="">
-          <figure>
-            <img src="images/avatar.webp" alt="" />
-            <figcaption>Avatar</figcaption>
-          </figure>
-        </a>
-        <a href="">
-          <figure>
-            <img src="images/plane.webp" alt="" />
-            <figcaption>Plane</figcaption>
-          </figure>
-        </a>
-        <a href="">
-          <figure>
-            <img src="images/babylon.webp" alt="" />
-            <figcaption>Babylon</figcaption>
-          </figure>
-        </a>
+        <div class="container slider">
+          <a href="">
+            <figure>
+              <img src="images/avatar.webp" alt="" />
+              <figcaption>Avatar</figcaption>
+            </figure>
+          </a>
+          <a href="">
+            <figure>
+              <img src="images/plane.webp" alt="" />
+              <figcaption>Plane</figcaption>
+            </figure>
+          </a>
+          <a href="">
+            <figure>
+              <img src="images/babylon.webp" alt="" />
+              <figcaption>Babylon</figcaption>
+            </figure>
+          </a>
+        </div>
       </section>
 
       <article class="container new">
