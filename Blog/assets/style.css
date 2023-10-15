@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 body {
   font-family: "Oswald", sans-serif;
   background: #000;
@@ -35,7 +42,11 @@ section {
 
 .movies_gallery .slider {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.movies_gallery .slider .item {
+  width: calc(33.333333% - 10px);
 }
 
 .movies_gallery .slider a {
@@ -44,9 +55,11 @@ section {
 }
 
 .movies_gallery img {
-  width: 250px;
-  height: 150px;
   margin-left: 10px;
+}
+
+.movies_gallery img:last-child {
+  margin: 0;
 }
 
 figcaption {
@@ -60,6 +73,25 @@ figcaption {
 h2 {
   color: #fff;
   font-size: 18px;
+}
+
+header ul {
+  text-align: left;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header a {
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+}
+.header_search {
+  margin-left: 20px;
 }
 
 header.menu {
@@ -76,55 +108,44 @@ header.menu {
   padding-right: 15px;
 }
 
-.menu a {
+.main_menu a {
   padding-left: 25px;
   color: #fff;
   font-weight: 600;
 }
 
-header ul {
+.new {
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.new span {
   text-align: left;
 }
 
-header ul li {
-  display: inline-block;
-}
-
-header a {
-  color: #fff;
-}
-
-header .contacts {
+.new ul {
+  margin-bottom: 50px;
+  padding: 20px;
   display: flex;
-}
-.header_search {
-  margin-left: 20px;
+  flex-wrap: wrap;
 }
 
-.new {
-  max-width: 800px;
+.new ul li {
+  width: 33.333333%;
 }
 
-article {
-  background: #fff;
-  padding: 10px;
-}
-
-article ul {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-article a {
+.new a {
   color: red;
   text-decoration: none;
 }
 
 .comp {
-  float: left;
-  width: 25%;
-  padding: 20px;
+  position: fixed;
+  left: 0;
+  padding: 25px;
+  background: #1529b4;
 }
 
 .comp a {
