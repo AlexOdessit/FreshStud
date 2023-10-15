@@ -53,9 +53,6 @@ header a {
   color: #fff;
 }
 
-header nav {
-  display: flex;
-}
 .header_search {
   margin-left: 20px;
 }
