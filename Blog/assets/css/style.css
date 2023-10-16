@@ -80,18 +80,25 @@ header.menu {
 .new {
   max-width: 800px;
   background: #fff;
-  padding: 20px;
+  padding: 20px 25px;
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  color: #000;
 }
-.new span {
+
+.new-date {
+  margin-bottom: 0;
+}
+.new-date-heading {
+  font-size: 15px;
   text-align: left;
+  color: inherit;
 }
 
 .new ul {
   margin-bottom: 50px;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -103,6 +110,7 @@ header.menu {
 .new a {
   color: red;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .comp {
