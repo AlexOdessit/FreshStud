@@ -5,26 +5,26 @@ body {
   font-size: 17px;
 }
 
-header {
+.welcome {
   background-image: url(../images/beach.jpg);
   background-size: cover;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  padding-top: 250px;
+  padding-top: 30vh;
 }
 
-.welcome-title h1 {
+.welcome-title {
   font-size: 50px;
   font-weight: bold;
 }
 
-.welcome-title p {
+.welcome p {
   font-size: 20px;
 }
 
-.welcome-title .button {
+.welcome-button {
   font-size: 18px;
   text-decoration: none;
   color: #926239;
@@ -34,39 +34,31 @@ header {
   margin-top: 20px;
 }
 
-.welcome-title .button:hover {
+.welcome-button:hover {
   background: #926239;
   color: #fff;
 }
 
-.section-a,
-.section-b {
+section {
   text-align: center;
   padding: 20px;
-}
-
-.section-a {
   background: #926239;
   color: #fff;
 }
 
 .section-b {
-  background: #f4f4f4;
+  background: #f9f9f9;
+  color: #926239;
 }
 
-.section-c .box-item {
+.box-item {
   display: inline-block;
   padding: 20px;
   width: calc(100% / 3);
   margin: 0 -5px 0 0;
 }
 
-.section-c .box-1,
-.section-c .box-3 {
-  color: #fff;
-  background: #926239;
-}
-
-.section-c .box-2 {
-  background: #f9f9f9;
+.box-2 {
+  background: #ffff;
+  color: #926239;
 }
