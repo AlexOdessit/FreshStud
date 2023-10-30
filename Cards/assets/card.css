@@ -14,8 +14,8 @@ body {
   position: relative;
   overflow: hidden;
   max-width: 400px;
-  width: 33.3%;
   min-height: 250px;
+  width: 33.3%;
   padding: 30px;
   border-radius: 2%;
   color: #fff;
@@ -37,6 +37,14 @@ body {
   font-size: 18px;
   margin-top: 60px;
   display: block;
+}
+
+.card-icon {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 30px;
+  height: 30px;
 }
 
 .card:nth-child(3n + 1) {
@@ -76,19 +84,18 @@ body {
   position: absolute;
   background: #fff;
   opacity: 0.3;
+  transition: transform 0.4s ease-in-out;
 }
 
 .card::before {
   top: 0;
   right: 0;
   transform: translate(50%, -15%);
-  transition: transform 0.4s ease-in-out;
 }
 .card::after {
   bottom: 0;
   right: 0;
   transform: translate(10%, 50%);
-  transition: transform 0.4s ease-in-out;
 }
 
 .card:hover,
