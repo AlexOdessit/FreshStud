@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.card-block {
+  padding-top: 100px;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 400px;
+  width: 33.3%;
+  min-height: 250px;
+  padding: 30px;
+  border-radius: 2%;
+  color: #fff;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card-score {
+  font-size: 35px;
+}
+
+.card-rates {
+  font-size: 18px;
+  margin-top: 60px;
+  display: block;
+}
+
+.card:nth-child(3n + 1) {
+  background: rgb(255, 181, 152);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 181, 152, 1) 30%,
+    rgba(255, 140, 151, 1) 70%
+  );
+}
+
+.card-score:first-child:before {
+  content: "$";
+  display: inline-block;
+  color: #fff;
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.card:nth-child(3n + 2) {
+  background: rgb(118, 207, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(118, 207, 241, 1) 40%,
+    rgba(31, 148, 228, 1) 100%
+  );
+}
+
+.card:nth-child(3n + 3) {
+  background: rgb(93, 215, 204);
+  background: linear-gradient(
+    90deg,
+    rgba(93, 215, 204, 1) 40%,
+    rgba(20, 209, 187, 1) 100%
+  );
+}
+
+.card::before,
+.card::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  background: #fff;
+  opacity: 0.3;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -15%);
+}
+.card::after {
+  bottom: 0;
+  right: 0;
+  transform: translate(10%, 50%);
+}
