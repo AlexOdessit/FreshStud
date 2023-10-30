@@ -98,8 +98,7 @@ body {
   transform: translate(10%, 50%);
 }
 
-.card:hover,
-.card:hover .card-score::before {
+.card:hover {
   color: #000;
 }
 
