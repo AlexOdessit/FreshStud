@@ -27,6 +27,10 @@ body {
 .card-title {
   font-size: 20px;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .card-score {
@@ -40,11 +44,11 @@ body {
 }
 
 .card-icon {
-  position: absolute;
+  /* position: absolute;
   top: 15%;
-  right: 10%;
-  width: 30px;
-  height: 30px;
+  right: 10%; */
+  width: 25px;
+  height: 25px;
 }
 
 .card:nth-child(3n + 1) {
