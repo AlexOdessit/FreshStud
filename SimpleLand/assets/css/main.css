@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap");
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #926239;
   line-height: 1.6;
   font-size: 17px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .welcome {
