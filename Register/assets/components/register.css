@@ -13,13 +13,33 @@
 }
 
 .register-heading {
+  position: relative;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
+  color: #656463;
+}
+
+.register-heading:before,
+.register-heading:after {
+  content: "";
+  width: 33%;
+  border-top: 2px solid #cfd0d4;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.register-heading:before {
+  left: 0;
+}
+
+.register-heading:after {
+  right: 0;
 }
 
 .register-text {
-  margin: 10px 0 25px;
+  margin: 10px 0 30px;
 }
 
 .register-form {
@@ -33,10 +53,18 @@
   padding: 10px;
   text-transform: uppercase;
   width: 100%;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid #cfd0d4;
+}
+
+.register-details:focus {
+  border: 1px solid #50a851;
 }
 
 .register-details::placeholder {
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .register-fullname {
@@ -57,6 +85,11 @@
 .privacy-block .terms {
   color: #a6c3ad;
   margin: 0 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.privacy-block .terms:hover {
+  color: #50a851;
 }
 
 #policy {
@@ -68,4 +101,6 @@
   background: #50a851;
   cursor: pointer;
   color: #fff;
+  font-weight: 600;
+  font-size: 16px;
 }
