@@ -1,0 +1,71 @@
+.register-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.register-wrapper {
+  background: #f2f3f7;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.register-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.register-text {
+  margin: 10px 0 25px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-details,
+#submit {
+  margin-bottom: 15px;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.register-details::placeholder {
+  font-size: 15px;
+}
+
+.register-fullname {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.register-name {
+  width: calc(50% - 10px);
+}
+
+.privacy-block {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.privacy-block .terms {
+  color: #a6c3ad;
+  margin: 0 5px;
+}
+
+#policy {
+  margin-right: 5px;
+}
+
+#submit {
+  border: none;
+  background: #50a851;
+  cursor: pointer;
+  color: #fff;
+}
