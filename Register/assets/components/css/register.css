@@ -71,6 +71,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  border: 0;
 }
 
 .register-name {
@@ -80,20 +81,16 @@
 .privacy-block {
   display: flex;
   margin-bottom: 15px;
+  gap: 5px;
 }
 
 .privacy-block .terms {
   color: #a6c3ad;
-  margin: 0 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .privacy-block .terms:hover {
   color: #50a851;
-}
-
-#policy {
-  margin-right: 5px;
 }
 
 #submit {
