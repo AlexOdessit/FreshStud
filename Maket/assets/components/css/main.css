@@ -2,4 +2,9 @@
 
 ::root {
   --h2-size: 40px;
+  --Poppins: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
