@@ -82,6 +82,12 @@ body {
   color: #000;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 /* Remove list styles */
 ul,
 ol {
@@ -132,6 +138,6 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
