@@ -1,9 +1,10 @@
 .main-header {
   position: sticky;
   top: 0;
+  padding: 15px 0;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 320px) {
   .navigation {
     display: none;
   }
@@ -14,11 +15,38 @@
 
   .burger {
     display: flex;
-    width: 40px;
-    height: 32px;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  .burger-lines {
-    color: #737373;
+  .burger-line,
+  .burger-line::before,
+  .burger-line::after {
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    border-radius: 15%;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .burger-line {
+    position: relative;
+  }
+
+  .burger-line::before {
+    transform: translateY(-7px) translateX(-50%);
+  }
+  .burger-line::after {
+    transform: translateY(7px) translateX(-50%);
   }
 }

@@ -73,15 +73,6 @@ td {
   vertical-align: baseline;
 }
 
-/* Set font-size to 16px and font-family to sans-serif */
-body {
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #000;
-}
-
 img {
   display: block;
   max-width: 100%;
