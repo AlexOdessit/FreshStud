@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;900&family=Poppins:wght@100;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&family=Poppins:wght@100;300;400;600;700;900&display=swap');
 
 :root {
-  --h2-size: 40px;
+  --h2-size: 36px;
+  --h3-size: 24px;
   --family-font: 'Montserrat', sans-serif;
+  --font-medium: 500;
+  --font-bold: 600;
   --poppins: 'Poppins', sans-serif;
   --main-color: #737373;
   --dark-color: #252b42;
-  --font-bold: 600;
-  --title-margin: 20px 0;
+
+  --title-space: 20px 0;
+  --inline-block: inline-block;
 }
 
 body {
@@ -20,23 +24,19 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 auto;
+  position: relative;
 }
 
 a {
-  display: inline-block;
+  display: var(--inline-block);
   text-decoration: none;
 }
 
 @media screen and (min-width: 320px) {
   :root {
-    --h1-size: 40px;
-    --h2-size: 24px;
+    --h2-size: 36px;
   }
 
-  .container {
-    position: relative;
-    max-width: 100%;
-  }
   .hero {
     padding: 50px 0;
     text-align: center;
@@ -48,7 +48,12 @@ a {
     font-weight: var(--font-bold);
   }
   .hero-title {
-    margin: var(--title-margin);
+    font-size: var(--h2-size);
+    margin: var(--title-space);
     color: var(--dark-color);
+  }
+
+  .hero-download-title {
+    font-weight: var(--font-medium);
   }
 }
