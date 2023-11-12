@@ -23,3 +23,14 @@ console.log(remainder);
 // to boolean
 let boolean = !!product;
 console.log(boolean);
+
+//Part 2
+let num = 5;
+
+num += 10;
+
+num = num * 2;
+
+num -= 4;
+
+num /= 6;
