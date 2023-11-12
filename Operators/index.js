@@ -30,7 +30,7 @@ let num = 5;
 
 num += 10;
 
-num = num * 2;
+num *= 2;
 
 num -= 4;
 
