@@ -1,3 +1,4 @@
+// Part 1
 //Sum
 let num1 = 40;
 let num2 = 60;
