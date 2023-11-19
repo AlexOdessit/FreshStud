@@ -4,6 +4,7 @@ const findLowNum = function (num1, num2) {
   let arr1 = [num1, num2];
   for (let i = 1; i < arr1.length; i++) {
     let min = arr1[0];
+    console.log(min);
     if (arr1[i] < min) {
       min = arr1[i];
     }
@@ -12,7 +13,7 @@ const findLowNum = function (num1, num2) {
 
   return arr2;
 };
-const lowNum = findLowNum(4, 5);
+const lowNum = findLowNum(4, 5, 10);
 console.log(lowNum);
 
 // Check Adult
