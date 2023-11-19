@@ -12,7 +12,7 @@ const findLowNum = function (num1, num2) {
 
   return arr2;
 };
-const lowNum = findLowNum(10, 20);
+const lowNum = findLowNum(4, 5);
 console.log(lowNum);
 
 // Check Adult
