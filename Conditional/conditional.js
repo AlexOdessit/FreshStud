@@ -37,14 +37,19 @@
 
 // Calculator
 let result = prompt('What would you  like to do (*,/,+,-)');
+foolProtection();
 function foolProtection() {
-  if (result === null || result === '') {
-    alert('You not entering anything');
+  if (result === '') {
+    result = prompt('Please enter some operator');
+  } else if (
+    result === null ||
+    result !== result ||
+    typeof result !== 'string'
+  ) {
+    alert('Hey you stop!');
     return;
   }
 }
-
-foolProtection();
 let x = +prompt('Enter first Number');
 let y = +prompt('Enter second Number');
 const calcFunction = function (x, y) {
