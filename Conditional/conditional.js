@@ -11,6 +11,7 @@
 //   }
 
 //   return arr2;
+
 // };
 // const lowNum = findLowNum(80, 55);
 // console.log(lowNum);
@@ -36,9 +37,22 @@
 
 // Calculator
 let result = prompt('What would you  like to do (*,/,+,-)');
+function foolProtection() {
+  if (result === null || result === '') {
+    alert('You not entering anything');
+    return;
+  }
+}
+
+foolProtection();
 let x = +prompt('Enter first Number');
 let y = +prompt('Enter second Number');
 const calcFunction = function (x, y) {
+  if (x !== x || y !== y) {
+    alert('Not a number!');
+    return false;
+  }
+
   switch (result) {
     case '+':
       return x + y;
