@@ -50,9 +50,9 @@ console.log(findLowNum(20, 10));
 
 // Calculator
 let result = prompt('What would you  like to do (*,/,+,-)');
+// хотелось бы чтоб проверка в функции на пустоту не запускала остальные prompt
 let x = +prompt('Enter first Number');
 let y = +prompt('Enter second Number');
-
 const calcFunction = function (x, y) {
   if (result === '' || result === null) {
     location.reload();
