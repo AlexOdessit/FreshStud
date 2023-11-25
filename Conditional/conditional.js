@@ -11,53 +11,48 @@
 //   }
 
 //   return arr2;
-
 // };
-// const lowNum = findLowNum(80, 55);
-// console.log(lowNum);
+const findLowNum = function (num1, num2) {
+  if (num1 < num2) {
+    return num1;
+  }
+  if (num2 < num1) {
+    return num2;
+  }
 
-// // Check Adult
+  if (isNaN(num1) || isNaN(num2)) {
+    return false;
+  } else {
+    return true;
+  }
+};
+
+console.log(findLowNum(20, 10));
+
+// Check Adult
+// let checkAgeMessage = +prompt('Are you adult?');
 // const checkMyAge = function (age) {
+//   if (checkAgeMessage === '') {
+//     checkAgeMessage = +prompt('Please enter your age');
+//   } else if (checkAgeMessage === null) {
+//     return null;
+//   }
 //   if (age >= 18) {
-//     alert('Ok,thank you !!!');
-//   } else if (age !== age) {
-//     alert('Only numeric allowed!');
+//     return true;
 //   } else if (age < 18) {
-//     alert('Not allowed to enter');
+//     return false;
+//   } else if (age !== age) {
+//     return 'not a number';
 //   }
 //   return age;
 // };
-
-// let checkAgeMessage;
-// checkAgeMessage === null || checkAgeMessage === ''
-//   ? (checkAgeMessage = +prompt('Please enter your age'))
-//   : (checkAgeMessage = +prompt('Are you adult?'));
-
-// checkMyAge(checkAgeMessage);
+// console.log(checkMyAge(checkAgeMessage));
 
 // Calculator
 let result = prompt('What would you  like to do (*,/,+,-)');
-foolProtection();
-function foolProtection() {
-  if (result === '') {
-    result = prompt('Please enter some operator');
-  } else if (
-    result === null ||
-    result !== result ||
-    typeof result !== 'string'
-  ) {
-    alert('Hey you stop!');
-    return;
-  }
-}
 let x = +prompt('Enter first Number');
 let y = +prompt('Enter second Number');
 const calcFunction = function (x, y) {
-  if (x !== x || y !== y) {
-    alert('Not a number!');
-    return false;
-  }
-
   switch (result) {
     case '+':
       return x + y;
@@ -75,5 +70,4 @@ const calcFunction = function (x, y) {
       return 'Somethig goes wrong';
   }
 };
-
-alert(calcFunction(x, y));
+calcFunction(x, y);
