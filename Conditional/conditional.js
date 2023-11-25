@@ -52,7 +52,12 @@ console.log(findLowNum(20, 10));
 let result = prompt('What would you  like to do (*,/,+,-)');
 let x = +prompt('Enter first Number');
 let y = +prompt('Enter second Number');
+
 const calcFunction = function (x, y) {
+  if (result === '' || result === null) {
+    location.reload();
+    return false;
+  }
   switch (result) {
     case '+':
       return x + y;
@@ -70,4 +75,4 @@ const calcFunction = function (x, y) {
       return 'Somethig goes wrong';
   }
 };
-calcFunction(x, y);
+alert(calcFunction(x, y));
