@@ -32,7 +32,7 @@ try {
   console.log(err.message);
 }
 
-//3 Math.min
+//3 Math.max
 const lowDigit = (...digits) => console.log(Math.max(...digits));
 const digitsArr = [34, 5, 89, 1000, 35, 3, 78, 4, 670, 1];
 lowDigit(...digitsArr);
