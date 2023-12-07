@@ -1,0 +1,8 @@
+// 1
+let result = 0;
+for (let i = 1; i <= 100; i++) {
+  console.log((result += i));
+}
+
+// 2
+let correctAns;
