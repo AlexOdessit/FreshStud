@@ -19,9 +19,9 @@ class Employee {
     if (typeof newName !== 'string' || newName.trim() === '') {
       throw new TypeError('Can not be a blank');
     }
-    const fullNameArr = newName.trim().split(' ');
-    this.#firstname = fullNameArr[0];
-    this.#surname = fullNameArr[1];
+    const [firstname, surname] = newName.trim().split(' ');
+    this.#firstname = firstname;
+    this.#surname = surname;
   }
 
   checkValue(value) {
