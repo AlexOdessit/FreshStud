@@ -1,26 +1,26 @@
 // function  Constructor
 function User(name, surname, gender, messageCounter) {
-  (this.name = name),
-    (this.surname = surname),
-    (this.gender = gender),
-    (this.messageCounter = messageCounter),
-    (this.userDetails = function () {
-      return (
-        'User:' +
-        '' +
-        this.name +
-        ',' +
-        'Surname:' +
-        '' +
-        this.surname +
-        ',Gender:' +
-        '' +
-        this.gender +
-        ',Messages:' +
-        '' +
-        this.messageCounter
-      );
-    });
+  this.name = name;
+  this.surname = surname;
+  this.gender = gender;
+  this.messageCounter = messageCounter;
+  this.userDetails = function () {
+    return (
+      'User:' +
+      '' +
+      this.name +
+      ',' +
+      'Surname:' +
+      '' +
+      this.surname +
+      ',Gender:' +
+      '' +
+      this.gender +
+      ',Messages:' +
+      '' +
+      this.messageCounter
+    );
+  };
   this.addMessage = function (text) {
     // debugger;
     this.messageCounter++;
