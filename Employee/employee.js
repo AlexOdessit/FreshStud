@@ -1,7 +1,7 @@
 class Employee {
-  #rate;
   #firstname;
   #surname;
+  #rate;
   #rateHour;
   constructor(firstname, surname, rate, rateHour, isMale = 'male') {
     this.#firstname = firstname;
@@ -9,6 +9,11 @@ class Employee {
     this.rate = rate;
     this.rateHour = rateHour;
     this.isMale = isMale;
+    this.fired = false;
+  }
+
+  static isWorker(worker) {
+    return worker instanceof Employee;
   }
 
   get fullName() {
@@ -24,9 +29,9 @@ class Employee {
     this.#surname = surname;
   }
 
-  checkValue(value) {
+  checkRateValue(value) {
     if (value <= 0) {
-      throw new RangeError('Can not be a zero value');
+      throw new RangeError('Can not be an empty value');
     }
     if (typeof value !== 'number' || isNaN(value)) {
       throw new TypeError('Not a number');
@@ -38,7 +43,7 @@ class Employee {
   }
 
   set rate(rate) {
-    this.checkValue(rate);
+    this.checkRateValue(rate);
     this.#rate = rate;
   }
 
@@ -47,15 +52,39 @@ class Employee {
   }
 
   set rateHour(rateHour) {
-    this.checkValue(rateHour);
+    this.checkRateValue(rateHour);
     this.#rateHour = rateHour;
   }
 
   getSalary() {
-    return this.#rate * this.#rateHour;
+    if (this.fired === true) {
+      throw new TypeError('Not working in a company');
+    } else {
+      return this.#rate * this.#rateHour;
+    }
+  }
+}
+
+class Manager extends Employee {
+  constructor(firstname, surname, privileges) {
+    super(firstname, surname, 10000, 20, 'male');
+    this.privileges = privileges;
+  }
+
+  toFire(emp) {
+    if (Manager.isTop(emp)) {
+      throw new TypeError('manager can be fired only by Chief!!!');
+    }
+    emp.fired = true;
+    console.log(`${this.fullName} get fired!!!`);
+  }
+
+  static isTop(top) {
+    return top instanceof Manager;
   }
 }
 
 const emp1 = new Employee('Alex', 'Grand', 15, 30);
 console.log(emp1.fullName);
 console.log(emp1.getSalary());
+const top1 = new Manager('Max', 'Weber', []);
