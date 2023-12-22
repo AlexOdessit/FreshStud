@@ -7,9 +7,9 @@ const arr1 = ['test', false, 2345, null];
 
 // arr1.forEach(checkIndexWithValue);
 
-arr1.forEach(function (y, x) {
-  console.log('Item with index' + x + ' ' + 'has a value' + ' ' + y);
-});
+arr1.map((y, x) =>
+  console.log('Item with index' + x + ' ' + 'has a value' + ' ' + y)
+);
 
 // 2 Filtered adult
 const usersList = [
@@ -48,7 +48,7 @@ const genderListArr = [
 
 // console.log(genderListArr.findIndex(femaleIndex));
 
-const femaleIndex = genderListArr.findIndex(function (name) {
-  return name.gender === 'female';
+const femaleIndex = genderListArr.findIndex(function (user) {
+  return user.gender === 'female';
 });
 console.log(femaleIndex);
