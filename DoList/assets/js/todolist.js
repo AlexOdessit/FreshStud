@@ -45,7 +45,6 @@ const createListItem = () => {
 const listForm = document.querySelector('#do_form');
 let error = document.createElement('p');
 listForm.addEventListener('submit', (e) => {
-  console.log(todos);
   e.preventDefault();
   let exists = false;
   let listItems = document.querySelectorAll('.do_itembox li');
