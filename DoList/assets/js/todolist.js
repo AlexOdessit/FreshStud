@@ -2,14 +2,14 @@
 let todos = [];
 const getInfoList = document.querySelector('#do_input');
 const createListItem = () => {
-  const infoText = getInfoList.value;
+  const taskInfo = getInfoList.value;
   const listNode = document.createElement('div');
   document
     .querySelector('.dolist_wrap')
     .appendChild(listNode)
     .classList.add('do_itembox');
   const getInfoItem = document.createElement('li');
-  getInfoItem.textContent = infoText;
+  getInfoItem.textContent = taskInfo;
   getInfoItem.classList.add('do_item');
   const removeItem = document.createElement('img');
   removeItem.setAttribute('src', 'assets/img/box.png');
@@ -19,7 +19,7 @@ const createListItem = () => {
 
   //Добавляем задачу
   listNode.append(checkTask, getInfoItem, removeItem);
-  const dataTask = { task: infoText };
+  const dataTask = { task: taskInfo };
   todos.push(dataTask);
 
   checkTask.addEventListener('change', () => {
@@ -27,7 +27,7 @@ const createListItem = () => {
     if (checkTask.checked) {
       getInfoItem.textContent = 'Got ya!!!';
     } else {
-      getInfoItem.textContent = infoText;
+      getInfoItem.textContent = taskInfo;
     }
   });
 
