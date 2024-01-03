@@ -23,9 +23,8 @@ const createListItem = () => {
   todos.push(dataTask);
 
   checkTask.addEventListener('change', () => {
-    checkTask.checked;
     if (checkTask.checked) {
-      getInfoItem.textContent = 'Got ya!!!';
+      getInfoItem.textContent = 'Done!';
     } else {
       getInfoItem.textContent = taskInfo;
     }
@@ -36,7 +35,6 @@ const createListItem = () => {
     if (e.target === removeItem && checkTask.checked) {
       e.target.parentNode.remove();
       todos = todos.filter((task) => task !== dataTask);
-      console.log(todos);
     } else {
       return;
     }
