@@ -31,7 +31,7 @@ class Employee {
 
   checkRateValue(value) {
     if (value <= 0) {
-      throw new RangeError('Can not be an empty value');
+      throw new RangeError('Can not be an zero value');
     }
     if (typeof value !== 'number' || isNaN(value)) {
       throw new TypeError('Not a number');
@@ -67,7 +67,7 @@ class Employee {
 
 class Manager extends Employee {
   constructor(firstname, surname, privileges) {
-    super(firstname, surname, 10000, 20, 'male');
+    super(firstname, surname, 1000, 20, 'male');
     this.privileges = privileges;
   }
 
